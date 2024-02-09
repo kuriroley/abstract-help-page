@@ -10,6 +10,7 @@
   --abs--black:#000000;
   --abs--white:#fff;
   --abs--lavender: #dadbf1;
+  --abs--darkgray: #191a1b;
 }
 .between-center-flex{
   display: flex;
@@ -21,9 +22,26 @@
   justify-content: center;
   align-items: center;
 }
-
 .mar-left{
   margin-left: auto;
+}
+.abs-button{
+  border: .01em solid var(--abs--white);
+  text-align: center;
+  background-color: var(--abs--darkgray);
+  border-radius: .50em;
+  padding: 0.6em 1em;
+  font-family: 'GT-America';
+  color: inherit;
+  cursor: pointer;
+  font-size: 90%;
+}
+.login{
+  border: none;
+}
+
+.bg-blue{
+  background-color: #4C5FD5;
 }
 
 /* reset and global styles */
@@ -34,7 +52,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'GT-America',sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   width: 100%;
   line-height: 1.5;
   background-color: var(--abs--black);
@@ -52,15 +70,34 @@ a{
 .nav-items{
   color: white;
   background-color: black;
-  width: min(30ch, inherit);
+  width: min(30ch , inherit);
   flex-wrap: wrap;
-  margin-top: 2em;
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+.logo{
+  font-size: 1.5em;
 }
 
 .logo-items{
   
 }
 .nav-item{
-  margin-left: .90em;
-  margin-right: .90em;
+  margin-top: 0.5em;
+  margin-left: .70em;
+  margin-right: .70em;
+}
+
+.nav-controls{
+  margin-right: 2em;
+}
+.request:hover{
+  background-color: #fff;
+  color: var(--abs--black);
+  transition: 0.5s;
+}
+.login:hover{
+  background-color: #fff;
+  color: var(--abs--black);
+  transition: 0.5s;
 }
