@@ -39,7 +39,6 @@
 .login{
   border: none;
 }
-
 .bg-blue{
   background-color: #4C5FD5;
 }
@@ -52,6 +51,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'GT-America',sans-serif;
+  font-style: inherit;
   font-size: 17px;
   width: 100%;
   line-height: 1.5;
@@ -66,28 +66,25 @@ a{
   color: inherit;
 }
 /* styling */
+nav{
+  
+}
 
 .nav-items{
   color: white;
   background-color: black;
   width: min(30ch , inherit);
   flex-wrap: wrap;
-  margin-top: 1.5em;
   font-size: 1.2em;
 }
 .logo{
   font-size: 1.5em;
-}
-
-.logo-items{
-  
 }
 .nav-item{
   margin-top: 0.5em;
   margin-left: .70em;
   margin-right: .70em;
 }
-
 .nav-controls{
   margin-right: 2em;
 }
@@ -100,4 +97,33 @@ a{
   background-color: #fff;
   color: var(--abs--black);
   transition: 0.5s;
+}
+.hero-unit{
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background-color: var(--abs--lavender);
+}
+.hero-element{
+  padding-top: 2em;
+  text-align: center;
+  max-width: 720px;
+  flex-direction: column;
+  padding-bottom: 3em;
+  margin: auto;
+}
+.hero-text{
+  font-size: 4.5em;
+  font-weight: 400;
+  letter-spacing: -4px;
+  margin-bottom: 0.2em;
+}
+.search-box{
+  margin-right: auto;
+  margin-left: auto;
+  width: clamp(300px,720px);
+}
+#query{
+  font-size: 1.5em;
+  padding: 1rem 1rem;
+  width: 55vw;
 }
