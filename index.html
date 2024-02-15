@@ -8,29 +8,34 @@
 </head>
 <body>
   <header>
-    <nav>
-        <ul class="nav-items between-center-flex">
-          <div class="logo-items centered-flex">
-            <li class="logo nav-item login"><a href="#">Abstract</a></li>
-            <span class="nav-item">|</span>
-            <li class="nav-item "><a href="#">Help Center</a></li>
-          </div>
-          <div class="nav-controls centered-flex">
-            <li class="nav-item "><a href="#"><button class="abs-button request">Submit a request</button></a></li>
-            <li class="nav-item "><a href="#"><button class="abs-button bg-blue login">Sign in</button></a></li>
-          </div>
-        </ul>
+    <nav class="navigation">
+      <ul class="left-nav nav-items">
+        <li><a href="#">Logo</a></li>
+        <li>|</li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+      <ul class="right-nav nav-items">
+        <li><a href="#">Submit A Request</a></li>
+        <li><a href="#">Sign in</a></li>
+      </ul>
     </nav>
   </header>
   <main>
-    <section class="hero-unit">
-      <div class="hero-element centered-flex">
+    <section class="hero-container">
+      <div class="hero">
         <div class="hero-text">
-          How can we help?
+          How can we Help?
         </div>
-        <form class="search-box" action="/hc/en-us/search" role="search" autocomplete="off">
-          <input type="search" id="query" placeholder="Search" name="query">
-        </form>
+        <div class="hero-search">
+          <!-- search bar 
+          and arrow for search bar -->
+        </div>
+      </div>
+    </section>
+
+    <section class="elements">
+      <div class="list-elements">
+        
       </div>
     </section>
 

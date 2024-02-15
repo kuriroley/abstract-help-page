@@ -1,8 +1,17 @@
 @font-face {
-  font-family: 'GT-America';
-  src: url(media/fonts/GT-America-Standard-Medium-Trial.otf),
-  url(media/fonts/GT-America-Standard-Bold-Trial.otf),
-  url(media/fonts/GT-America-Standard-Regular-Trial.otf);
+  font-family: 'GT America Medium';
+  font-weight: 400;
+  src: url(media/fonts/GT-America-Standard-Medium-Trial.otf)
+}
+@font-face {
+  font-family: 'GT America Bold';
+  font-weight: 900;
+  src: url(media/fonts/GT-America-Standard-Bold-Trial.otf);
+}
+@font-face {
+  font-family: 'GT America Regular';
+  font-weight: 100;
+  src: url(media/fonts/GT-America-Standard-Regular-Trial.otf);
 }
 
 :root{
@@ -11,6 +20,10 @@
   --abs--white:#fff;
   --abs--lavender: #dadbf1;
   --abs--darkgray: #191a1b;
+
+  --ff--gt-america-regular: 'GT America Regular';
+  --ff--gt-america-medium: 'GT America Medium';
+  --ff--gt-america-bold: 'GT America Bold';
 }
 .between-center-flex{
   display: flex;
@@ -31,7 +44,7 @@
   background-color: var(--abs--darkgray);
   border-radius: .50em;
   padding: 0.6em 1em;
-  font-family: 'GT-America';
+  font-family: var(--ff--gt-america-regular);
   color: inherit;
   cursor: pointer;
   font-size: 90%;
@@ -46,18 +59,22 @@
 /* reset and global styles */
 *{
   box-sizing: border-box;
-}
-body{
   margin: 0;
   padding: 0;
-  font-family: 'GT-America',sans-serif;
+}
+body{
+  font-family: var(--ff--gt-america-regular);
   font-style: inherit;
   font-size: 17px;
   width: 100%;
   line-height: 1.5;
-  background-color: var(--abs--black);
+  background-color: #000000;
+  color: #fff;
 }
-
+img{
+  max-width: 100%;
+  height: auto;
+}
 ul{
   list-style-type: none;
 }
@@ -66,64 +83,3 @@ a{
   color: inherit;
 }
 /* styling */
-nav{
-  
-}
-
-.nav-items{
-  color: white;
-  background-color: black;
-  width: min(30ch , inherit);
-  flex-wrap: wrap;
-  font-size: 1.2em;
-}
-.logo{
-  font-size: 1.5em;
-}
-.nav-item{
-  margin-top: 0.5em;
-  margin-left: .70em;
-  margin-right: .70em;
-}
-.nav-controls{
-  margin-right: 2em;
-}
-.request:hover{
-  background-color: #fff;
-  color: var(--abs--black);
-  transition: 0.5s;
-}
-.login:hover{
-  background-color: #fff;
-  color: var(--abs--black);
-  transition: 0.5s;
-}
-.hero-unit{
-  padding-top: 2em;
-  padding-bottom: 3em;
-  background-color: var(--abs--lavender);
-}
-.hero-element{
-  padding-top: 2em;
-  text-align: center;
-  max-width: 720px;
-  flex-direction: column;
-  padding-bottom: 3em;
-  margin: auto;
-}
-.hero-text{
-  font-size: 4.5em;
-  font-weight: 400;
-  letter-spacing: -4px;
-  margin-bottom: 0.2em;
-}
-.search-box{
-  margin-right: auto;
-  margin-left: auto;
-  width: clamp(300px,720px);
-}
-#query{
-  font-size: 1.5em;
-  padding: 1rem 1rem;
-  width: 55vw;
-}
