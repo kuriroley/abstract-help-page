@@ -140,9 +140,21 @@ a{
 }
 
 .elements{
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);
+  padding-top: 2em;
   background-color: #fff;
   color: black;
+  padding-left: 2em;
+  padding-right: 2em;
+  
+}
+.list-elements{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5em;
+}
+
+.element{
+  /* display: flex;
+  flex-direction: column; */
 }
 
