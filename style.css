@@ -25,36 +25,7 @@
   --ff--gt-america-medium: 'GT America Medium';
   --ff--gt-america-bold: 'GT America Bold';
 }
-.between-center-flex{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.centered-flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mar-left{
-  margin-left: auto;
-}
-.abs-button{
-  border: .01em solid var(--abs--white);
-  text-align: center;
-  background-color: var(--abs--darkgray);
-  border-radius: .50em;
-  padding: 0.6em 1em;
-  font-family: var(--ff--gt-america-regular);
-  color: inherit;
-  cursor: pointer;
-  font-size: 90%;
-}
-.login{
-  border: none;
-}
-.bg-blue{
-  background-color: #4C5FD5;
-}
+
 
 /* reset and global styles */
 *{
@@ -63,10 +34,9 @@
   padding: 0;
 }
 body{
-  font-family: var(--ff--gt-america-regular);
+  font-family: var(--ff--gt-america-regular),sans-serif;
   font-style: inherit;
-  font-size: 17px;
-  width: 100%;
+  font-size: 20px;
   line-height: 1.5;
   background-color: #000000;
   color: #fff;
@@ -82,4 +52,97 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+/* Media queries */
+@media screen and (max-width: 400px) {
+  body{
+    
+  }
+  .hero-container{
+    
+  }
+  .hero{
+    
+  }
+  
+  
+  
+}
+@media screen and (min-width: 401px) and (max-width:960px) {
+  body{
+  
+  }
+  
+  
+}
+@media screen and (max-width: 961px) {
+  body{
+    
+  }
+  
+}
+/* custom properties */
+.nav-items{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.element-blue{
+  background-color: #4C5FD5;
+}
+
+
 /* styling */
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  padding: 1em;
+  margin-top: 1em;
+}
+.left-nav{
+  display: flex;
+  margin-right: auto;  
+}
+.right-nav{
+  display: flex;
+  
+}
+
+.main-content{
+
+}
+.hero-container{
+  background-color: #dadbf1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: -4px;
+}
+.hero{
+  padding: 1em;
+  width: 50vw;
+  text-align: center;
+}
+.hero-text{
+  font-size: 4rem;
+  margin-top: 0.3em;
+  padding: 0.2em;
+}
+.hero-search{
+  margin-bottom: 3em;
+}
+#query{
+  font-size: 1em;
+  width: 100%;
+  padding: 1em 1em;
+}
+
+.elements{
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  background-color: #fff;
+  color: black;
+}
+
