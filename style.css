@@ -26,7 +26,6 @@
   --ff--gt-america-bold: 'GT America Bold';
 }
 
-
 /* reset and global styles */
 *{
   box-sizing: border-box;
@@ -54,33 +53,10 @@ a{
 }
 
 /* Media queries */
-@media screen and (max-width: 400px) {
-  body{
-    
-  }
-  .hero-container{
-    
-  }
-  .hero{
-    
-  }
-  
-  
-  
+@media screen and (min-width: 700px) {
+ 
 }
-@media screen and (min-width: 401px) and (max-width:960px) {
-  body{
-  
-  }
-  
-  
-}
-@media screen and (max-width: 961px) {
-  body{
-    
-  }
-  
-}
+
 /* custom properties */
 .nav-items{
   margin-left: 0.5em;
@@ -105,11 +81,10 @@ a{
 }
 .right-nav{
   display: flex;
-  
 }
 
 .main-content{
-
+  background-color: white;
 }
 .hero-container{
   background-color: #dadbf1;
@@ -121,12 +96,11 @@ a{
   letter-spacing: -4px;
 }
 .hero{
-  padding: 1em;
-  width: 50vw;
-  text-align: center;
+  padding: 2em 2em;
+  text-align: center;  
 }
 .hero-text{
-  font-size: 4rem;
+  font-size: 4.3rem;
   margin-top: 0.3em;
   padding: 0.2em;
 }
@@ -134,27 +108,41 @@ a{
   margin-bottom: 3em;
 }
 #query{
-  font-size: 1em;
   width: 100%;
   padding: 1em 1em;
+  font-size: 1em;
+  border-radius: 3px;
+  border: 1px solid black;
 }
-
 .elements{
-  padding-top: 2em;
   background-color: #fff;
   color: black;
-  padding-left: 2em;
-  padding-right: 2em;
-  
+  padding-left: 3em;
+  padding-right: 3em; 
+  margin: 0 auto;
 }
 .list-elements{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1.5em;
+  margin-top: 7em;
+  
 }
-
 .element{
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+}
+.element-icon{
+  max-height: 120px;
+  margin-right: 0.5em;
+}
+.element-content{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  line-height: 32px;
+}
+.element-title{
+  font-size: 1.1em;
+  font-weight: 900;
 }
 
